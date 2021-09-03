@@ -1,0 +1,14 @@
+.listItem__videoData {
+  flex-basis: 50%;
+  .videoData__title {
+    max-height: 3.75em;
+    font-size: 1.5rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .videoData__chName {
+    margin: 0.4rem 0;
+  }
+}
