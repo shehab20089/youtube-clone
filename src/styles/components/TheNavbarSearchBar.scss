@@ -1,0 +1,16 @@
+.searchbar {
+  color: white;
+
+  position: relative;
+  input {
+    font-size: 1rem;
+    text-align: left;
+    height: 20px;
+    width: 100%;
+  }
+  i {
+    position: absolute;
+    right: 0;
+    font-size: 1.4rem;
+  }
+}
