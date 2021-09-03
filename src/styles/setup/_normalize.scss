@@ -123,3 +123,8 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+//remove all basic style for input
+input {
+  all: unset;
+}
