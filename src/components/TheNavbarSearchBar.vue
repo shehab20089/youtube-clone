@@ -4,6 +4,7 @@
 
     <input
       type="search"
+      id="search"
       @blur="SearchIconVisable = true"
       @focus="SearchIconVisable = false"
       v-model="searchKey"
@@ -29,6 +30,6 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
 @import "../styles/components/TheNavbarSearchBar";
 </style>
