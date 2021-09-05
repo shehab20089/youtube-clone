@@ -1,6 +1,6 @@
 <template>
   <div class="listItem">
-    <ListPlayListItemShot />
+    <ListPlayListItemShot class="y-margin-right" />
     <ListVideoItemData />
   </div>
 </template>
