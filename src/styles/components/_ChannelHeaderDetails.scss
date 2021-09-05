@@ -1,0 +1,51 @@
+.channelHeader {
+  padding-bottom: 3em;
+  background: #f1f1f1;
+
+  .channelHeader__cover {
+    height: 62.63px;
+    padding-bottom: 4px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .channelHeader__details {
+    position: relative;
+    margin-left: 1.6rem;
+    box-sizing: border-box;
+    .details__avatar {
+      position: absolute;
+      top: -2.7rem;
+      left: 0;
+      height: 5.5rem;
+      width: 5.5rem;
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+    }
+    .details__info {
+      padding-left: 4.6rem;
+      padding-top: 3rem;
+      .info__title {
+        margin-bottom: 1rem;
+
+        font-size: 1.8rem;
+      }
+      .info__subscribe {
+        cursor: pointer;
+
+        color: #cc0000;
+        font-size: 1.4rem;
+        font-weight: 500;
+      }
+      div {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+}
