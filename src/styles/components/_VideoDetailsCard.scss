@@ -1,0 +1,45 @@
+.videoDetails {
+  padding: 1em;
+  padding-top: 2em;
+  border-bottom: 1px solid #00000018;
+  border-top: 1px solid #000000;
+
+  .videoDetails__title {
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: space-between;
+    .descIcon {
+      text-align: right;
+      cursor: pointer;
+    }
+  }
+  .videoDetails__chName {
+    margin: 1rem 0;
+    font-size: 1.4rem;
+  }
+  .videoDetails__actions {
+    font-size: 1.8rem;
+    opacity: 0.6;
+    margin-bottom: 1em;
+
+    display: flex;
+    justify-content: space-between;
+
+    .action__interaction {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      i,
+      span {
+        margin-right: 0.4rem;
+        cursor: pointer;
+      }
+    }
+    .actions__share {
+      margin-right: 2rem;
+      i {
+        margin-left: 3rem;
+      }
+    }
+  }
+}
