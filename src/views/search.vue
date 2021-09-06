@@ -13,9 +13,10 @@
           v-else-if="item.id.kind == 'youtube#playlist'"
         />
         <ListChannelItem
+          @click.native="navigateTo('channelDetails', item.id.channelId)"
           :snippet="item.snippet"
           :id="item.id.channelId"
-          v-else-if="'youtube#playlist'"
+          v-else
         />
       </div>
     </template>
@@ -68,6 +69,10 @@ export default {
         console.log("error");
         console.log(err);
       }
+    },
+    navigateTo(loc, payload) {
+      console.log("loc");
+      this.$router.push({ name: loc, params: { id: payload } });
     },
   },
 };

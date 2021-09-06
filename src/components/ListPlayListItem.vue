@@ -2,7 +2,7 @@
   <div class="listItem">
     <ListPlayListItemShot
       :img="snippet.thumbnails.default.url"
-      :videoCount="'40'"
+      :videoCount="videoCount"
       class="y-margin-right"
     />
     <ListVideoItemData
@@ -25,6 +25,7 @@ export default {
   props: {
     id: { required: true },
     snippet: { required: true },
+    videoCount: { default: "40" },
   },
 };
 </script>
