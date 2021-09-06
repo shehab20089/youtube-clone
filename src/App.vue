@@ -1,12 +1,24 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <!-- <router-link to="/">Home</router-link> | -->
-      <!-- <router-link to="/about">About</router-link> -->
-    </div>
-    <router-view />
+    <component :is="layout">
+      <router-view />
+    </component>
   </div>
 </template>
 
+<script>
+import Default from "./layout/default.vue";
+
+export default {
+  components: {
+    Default,
+  },
+  computed: {
+    layout() {
+      return this.$route.meta.layout || "Default";
+    },
+  },
+};
+</script>
 <style lang="scss">
 </style>
