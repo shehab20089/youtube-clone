@@ -1,7 +1,15 @@
 <template>
   <div class="listItem">
-    <ListPlayListItemShot class="y-margin-right" />
-    <ListVideoItemData />
+    <ListPlayListItemShot
+      :img="snippet.thumbnails.default.url"
+      :videoCount="'40'"
+      class="y-margin-right"
+    />
+    <ListVideoItemData
+      :title="snippet.title"
+      :channelName="snippet.channelTitle"
+      :views="'64M'"
+    />
   </div>
 </template>
 
@@ -13,6 +21,10 @@ export default {
   components: {
     ListPlayListItemShot,
     ListVideoItemData,
+  },
+  props: {
+    id: { required: true },
+    snippet: { required: true },
   },
 };
 </script>

@@ -24,6 +24,7 @@ export default {
 
   methods: {
     searchVideo() {
+      this.$router.push({ name: "search", query: { key: this.searchKey } });
       //   TODO Search Video
     },
   },

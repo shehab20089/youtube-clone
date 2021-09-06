@@ -1,7 +1,14 @@
 <template>
   <div class="listItem">
-    <ListChannelItemAvatar class="y-margin-right" />
-    <ListVideoItemData />
+    <ListChannelItemAvatar
+      :img="snippet.thumbnails.default.url"
+      class="y-margin-right"
+    />
+    <ListVideoItemData
+      :title="snippet.title"
+      :channelName="'160 Videos'"
+      :views="'64M Subscribers'"
+    />
   </div>
 </template>
 
@@ -13,6 +20,10 @@ export default {
   components: {
     ListChannelItemAvatar,
     ListVideoItemData,
+  },
+  props: {
+    id: { required: true },
+    snippet: { required: true },
   },
 };
 </script>

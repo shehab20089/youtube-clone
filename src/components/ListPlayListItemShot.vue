@@ -1,19 +1,20 @@
 <template>
   <div class="listItem__playListShot">
-    <img
-      class="cover"
-      src="https://i.ytimg.com/vi/ghjmNLBtC9E/hqdefault.jpg"
-      alt="video screenshot"
-    />
+    <img class="cover" :src="img" alt="video screenshot" />
     <div class="playListShot__playIcon">
-      <p class="playIcon__number">37</p>
+      <p class="playIcon__number">{{ videoCount }}</p>
       <img src="../assets/playlist-videos.svg" alt="" />
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    img: { required: true },
+    videoCount: { required: true },
+  },
+};
 </script>
 
 <style lang="scss" scoped>

@@ -1,15 +1,15 @@
 <template>
   <div class="listItem__videoShot">
-    <img
-      class="cover"
-      src="https://i.ytimg.com/vi/ghjmNLBtC9E/hqdefault.jpg"
-      alt="video screenshot"
-    />
+    <img class="cover" :src="img" alt="video screenshot" />
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    img: { required: true },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
